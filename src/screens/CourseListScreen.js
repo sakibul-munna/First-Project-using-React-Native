@@ -4,7 +4,6 @@ import { FlatList } from "react-native-gesture-handler";
 
 const CourseListScreen = (props) => {
     const semester = props.route.params.semester_selected;
-    console.log(semester);
     const first_sem_course_lists = [
         { name: " Islamiat", key: '1' },
         { name: " Technology, Environment and Society", key: '2' },
