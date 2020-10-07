@@ -4,7 +4,7 @@ import { Text, StyleSheet, Button, View, Image, TouchableOpacity } from "react-n
 
 const HomeScreen = (props) => {
     return (
-        <View style= {styles.viewStyle}>
+        <View style={styles.viewStyle}>
             <Image style={styles.imageStyle} source={require("./../../assets/iutLogo.jpg")}
             />
             <Text style={styles.textStyle}>Department of CSE</Text>
@@ -13,18 +13,22 @@ const HomeScreen = (props) => {
                 onPress={function () {
                     props.navigation.navigate("Profile");
                 }}>
-                    <Text style={styles.textStyle2}>My Profile</Text>
+                <Text style={styles.textStyle2}>My Profile</Text>
             </TouchableOpacity>
-            <Button title = "Semester Wise Course List" style= {styles.buttonStyle} onPress = {
-                function () {
-                    props.navigation.navigate("SemestersScreen");
-                }
-            }/>
-            <Button title = "List of Faculty Members" style= {styles.buttonStyle} onPress = {
-                function () {
-                    props.navigation.navigate("FacultyMembersScreen");
-                }
-            }/>
+            <View style = {styles.buttonStyle}>
+                <Button title="Semester Wise Course List" style={styles.buttonStyle} onPress={
+                    function () {
+                        props.navigation.navigate("SemestersScreen");
+                    }
+                } />
+            </View>
+            <View style = {[{margin: 50, paddingTop: 20, marginBottom: 110, fontSize: 30,}]}>
+                <Button title="List of Faculty Members" style={styles.buttonStyle} onPress={
+                    function () {
+                        props.navigation.navigate("FacultyMembersScreen");
+                    }
+                } />
+            </View>
         </View>
     );
 };
@@ -55,9 +59,9 @@ const styles = StyleSheet.create(
             marginVertical: 30,
         },
         buttonStyle: {
-            margin: 30,
+            paddingTop: 30,
+            margin: 50,
             fontSize: 20,
-            color: "#87fbcc"
         }
     }
 );

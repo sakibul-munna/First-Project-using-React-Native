@@ -2,11 +2,10 @@ import React from "react";
 import {NavigationContainer} from "@react-navigation/native";
 import {createStackNavigator} from "@react-navigation/stack";
 import HomeScreen from "./src/screens/HomeScreen";
-import ListScreen from "./src/screens/ListScreen";
 import Profile from "./src/screens/Profile";
 import SemestersScreen from "./src/screens/SemestersScreen";
 import FacultyMembersScreen from "./src/screens/FacultyMembersScreen";
-import Sem_FirstScreen from "./src/screens/Sem_FirstScreen";
+import CourseListScreen from "./src/screens/CourseListScreen"
 
 const stack = createStackNavigator();
 
@@ -19,6 +18,7 @@ function App()
                 <stack.Screen name= "Profile" component= {Profile}></stack.Screen>
                 <stack.Screen name= "SemestersScreen" component= {SemestersScreen}></stack.Screen>
                 <stack.Screen name= "FacultyMembersScreen" component= {FacultyMembersScreen}></stack.Screen>
+                <stack.Screen name= "CourseListScreen" component= {CourseListScreen}></stack.Screen>
             </stack.Navigator>
         </NavigationContainer>
     );

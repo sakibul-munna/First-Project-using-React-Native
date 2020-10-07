@@ -20,17 +20,20 @@ const styles = StyleSheet.create(
             backgroundColor: '#f2fbff'
         },
         textStyle: {
+            textAlign: 'left',
             fontSize: 30,
             margin: 10,
             color:"#50a8e0",
+            paddingBottom: 12
         },
         imageStyle: {
+            marginTop: 30,
             alignSelf: 'center',
-            height: 400,
-            width: 300,
+            height: 500,
+            width: 400,
             margin: 10,
             marginBottom: 50
-        }
+        },
     }
 );
 

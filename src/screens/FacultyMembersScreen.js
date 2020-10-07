@@ -28,9 +28,11 @@ const styles = StyleSheet.create(
     {
         textStyle: 
         {
-            fontSize: 50,
+            fontSize: 35,
+            paddingTop: 30,
+            paddingBottom: 30,
             color:"#50a8e0",
-            margin: 10,
+            margin: 20,
             marginVertical: 20,
         },
         viewStyle:
